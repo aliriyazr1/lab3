@@ -4,12 +4,14 @@ import React, {MouseEvent, ReactNode} from "react";
 type Props = 
 {
     onClick(e: MouseEvent <HTMLElement>): void,
-    children: ReactNode
+    children: ReactNode,
+    color: string
 }
 
-const Button: React.FC<Props> = ({ onClick, children}) => {
+const Button: React.FC<Props> = ({ onClick, children, color}) => {
+    //THIS SUCKS
     return (
-        <button onClick={onClick}> {children}</button>
+        <button onClick={onClick} style= {{backgroundColor: color}}> {children}</button>
     );
 };
 

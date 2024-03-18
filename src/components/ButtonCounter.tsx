@@ -15,7 +15,6 @@ const ButtonCounter: React.FC = () => {
     return (
         <>
         <Button onClick={handleIncrement} color="green"> Increment</Button>
-        "You've clicked me {clicksCount} times!"
         <Button onClick={handleDecrement} color="red">Decrement</Button>
         "You've clicked me {clicksCount} times!"
         </>
